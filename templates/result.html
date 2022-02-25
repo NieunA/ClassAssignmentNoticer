@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이름중학교 배정알림시스템</title>
+    <link rel="stylesheet" href="./static/main.css">
+    <link rel="stylesheet" href="./static/result.css">
+</head>
+<body>
+    <header>
+        <h1 id="mainTitle">이름중학교 배정&nbsp;알림&nbsp;시스템</h1>
+    </header>
+    <div id="main" style="text-align: center; width: 100%;">
+        <div class="lineBorder" id="form" style="display: table; padding-bottom: 1rem;">
+            <div id="studentInfoDiv" class="flexContainer">
+                <p class="studentInfo"><b>{{ name }}</b> 님께서는</p>
+                <p class="studentInfo"><b>{{ studentID[0] }}학년 {{ studentID[1] }}반 {{ studentID[2:] | int | string }}번</b>으로 배정되셨습니다.</p>
+                <p class="studentInfo">계정은 <b>22{{ studentID }}@ireum.ms.kr</b>입니다.</p>
+                <p class="studentInfo">기존 비밀번호가 <u>없는 경우</u><br>비밀번호는 <b>password</b>입니다.</p>
+            </div>
+        </div>
+        <p style="font-size:1.25rem; margin-top: 0.5rem;">문의: NieunA@ireum.ms.kr</p>
+    </div>
+    <footer>
+        <div class="flexContainer" style="flex-direction: column; align-items: center;">
+            <p style="margin-bottom: 0">
+                이름중학교 배정알림시스템<br>
+            </p>
+            <div class="flexContainer" style="align-items: center">
+                by Team Ireum
+                <a href="https://github.com/NieunA"><img src="images/GitHub-Mark-32px.png" style="display: block; height: 1rem; margin-left: 0.25rem;"></a>
+            </div>
+            <p style="margin-top: 0">
+                NieunA
+        </div>
+    </footer>
+</body>
+</html>

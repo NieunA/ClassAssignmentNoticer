@@ -1,0 +1,95 @@
+@import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css");
+
+@media (max-width: 768px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 480px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 320px) {
+	html {
+		font-size: 10px;
+	}
+}
+
+* {
+	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+
+body {
+	margin: 0;
+	background-color: #79a8ec;
+}
+
+header {
+	text-align: center;
+	background-color: #f1f1f1;
+	padding: 1em;
+}
+
+footer {
+	width: 100%;
+	height: 110px;
+	bottom: 0;
+	position: absolute;
+	text-align: center;
+	background-color: #f5f5f5;
+}
+
+.flexContainer {
+	display: flex;
+}
+
+
+h1#mainTitle {
+    font-size: 2.5em;
+    font-weight: bold;
+	margin: 0;
+	word-break: keep-all;
+}
+
+div#main {
+	text-align: center;
+}
+
+div#input {
+	margin: 0 auto;
+	width: 20rem;
+	flex-direction: column;
+	align-items: center;
+}
+
+input {
+	width: 5rem;
+	margin-top: 1px;
+}
+
+#oldGrade {
+	width: 5rem;
+	box-sizing: content-box;
+	padding: 2px 5px 2px 1px;
+}
+
+/* 링크 밑줄 없애기 */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#form {
+	width: fit-content;
+	margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+	padding: 1rem 1rem 3rem 1rem;
+	background-color: #ffffff;
+	border-radius: 1rem;
+}
+
